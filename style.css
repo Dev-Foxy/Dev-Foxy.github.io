@@ -1,10 +1,14 @@
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .score-board{
   position: absolute;
   top: 20px;
   right: 40px;
-  font-size: 20px;
+  font-size: 40px;
   background-color: #fff;
   padding: 10px;
   z-index: 999;
@@ -20,13 +24,14 @@
 }
 
 #game-container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-image: url("./bg.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
 }
 
 #game-container.hide{
@@ -64,6 +69,7 @@ body{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    touch-action: manipulation;
 }
 
 .container{
@@ -112,4 +118,3 @@ h1{
   cursor: pointer;
 
 }
-  
